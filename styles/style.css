@@ -10,47 +10,47 @@ html {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin-block: auto;
-  margin-inline: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: #1b1919;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-inline: auto;
+  margin-block: auto;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 .content {
-  inline-size: 1140px;
-  block-size: 534px;
   display: flex;
   align-items: flex-end;
   gap: 30px;
+  inline-size: 1140px;
+  block-size: 534px;
 }
 
 .button {
   display: inline-block;
-  padding-block: 6px;
+  border: 1px solid #fff;
   padding-inline: 20px;
-  background-color: transparent;
+  padding-block: 6px;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  border: 1px solid #fff;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -76,16 +76,16 @@ html {
 
 .result__video-container {
   position: relative;
+  margin-block-end: 16px;
   inline-size: 711px;
   block-size: 386px;
-  margin-block-end: 16px;
 }
 
 .result__video {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form {
@@ -101,10 +101,10 @@ html {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  margin-block-end: 5px;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  margin-block-end: 5px;
 }
 
 .search-form__label {
@@ -129,11 +129,10 @@ html {
   border-style: solid;
   border-color: #fff;
   color: #fff;
-  background-color: transparent;
   font-family: Fira Sans Condensed;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
+  background-color: transparent;
   appearance: none;
   inline-size: 225px;
 }
@@ -152,20 +151,20 @@ html {
 }
 
 .search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+  padding-inline: 1px;
+  padding-block: 1px;
   block-size: 19px;
   inline-size: 19px;
-  border: 1px solid #fff;
-  padding-block: 1px;
-  padding-inline: 1px;
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: block;
+  opacity: 0;
+  background-color: #fff;
   block-size: 100%;
   inline-size: 100%;
-  background-color: #fff;
-  opacity: 0;
 }
 
 .search-form__label:has(:checked) .search-form__pseudo-checkbox::after {
@@ -180,11 +179,11 @@ html {
 /* ПРАВАЯ ЧАСТЬ */
 
 .content__details {
-  flex-grow: 1;
-  min-inline-size: 0;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 18px;
+  min-inline-size: 0;
 }
 
 .title {
@@ -196,7 +195,7 @@ html {
 }
 
 .content__accent {
-  color:#545050;
+  color: #545050;
 }
 
 .content__list-container {
@@ -204,10 +203,10 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  block-size: 300px;
-  overflow-y: scroll;
-  padding-block: 2px;
   padding-inline: 3px;
+  padding-block: 2px;
+  overflow-y: scroll;
+  block-size: 300px;
 }
 
 .content__list {
@@ -218,8 +217,8 @@ html {
 
 .content__card-link {
   display: block;
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -238,9 +237,9 @@ html {
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  block-size: 103px;
-  overflow: hidden;
   gap: 20px;
+  overflow: hidden;
+  block-size: 103px;
 }
 
 .content__video-card:active {
@@ -258,14 +257,14 @@ html {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  line-height: 1.1;
   text-transform: uppercase;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 1.1;
 }
 
 .content__video-card-description {
@@ -273,15 +272,14 @@ html {
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
 }
 
 .content__video-card-thumbnail {
   flex-shrink: 0;
-  inline-size: 194px;
-  block-size: 103px;
   object-fit: cover;
   object-position: center;
+  inline-size: 194px;
+  block-size: 103px;
 }
 
 .more-button {
@@ -298,10 +296,10 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin-block: 0;
   margin-inline: 0;
-  padding-block: 0;
+  margin-block: 0;
   padding-inline: 0;
+  padding-block: 0;
 }
 
 ul,
@@ -319,5 +317,5 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
